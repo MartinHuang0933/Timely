@@ -1,0 +1,28 @@
+PODS:
+  - Kingfisher (5.13.2):
+    - Kingfisher/Core (= 5.13.2)
+  - Kingfisher/Core (5.13.2)
+  - LLCycleScrollView (1.6.0):
+    - Kingfisher
+  - SDWebImage (5.6.1):
+    - SDWebImage/Core (= 5.6.1)
+  - SDWebImage/Core (5.6.1)
+
+DEPENDENCIES:
+  - LLCycleScrollView
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - LLCycleScrollView
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Kingfisher: d342c8354c10c3d85a27d6d4c42c41285924b898
+  LLCycleScrollView: a08f666671f9fd1a205df9defebc3c217d59abc8
+  SDWebImage: 7edb9c3ea661e77a66661f7f044de8c1b55d1120
+
+PODFILE CHECKSUM: e188c97e8da78ad295d4f90e4b6d7908bd46e4a3
+
+COCOAPODS: 1.8.4
