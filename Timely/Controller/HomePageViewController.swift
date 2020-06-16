@@ -25,7 +25,7 @@ class HomePageViewController: UIViewController {
     
     lazy var contentView: UIView = {
         let contentView = UIView()
-        return contentView
+        return contentView 
     }()
     
     override func viewDidLoad() {
