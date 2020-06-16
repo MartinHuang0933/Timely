@@ -14,5 +14,6 @@ target 'Timely' do
 
   pod 'SDWebImage'
   pod 'LLCycleScrollView'
+  pod 'SnapKit'
 
 end

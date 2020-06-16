@@ -20,6 +20,8 @@
 		04254F57244017D8003813DF /* BannerLoopModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04254F56244017D8003813DF /* BannerLoopModel.swift */; };
 		04254F60244062D5003813DF /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04254F5E244062D5003813DF /* StoryTableViewCell.swift */; };
 		04254F6624444570003813DF /* XJCollectionViewCenterLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 04254F6424444570003813DF /* XJCollectionViewCenterLayout.m */; };
+		04375BB12465061100253583 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04375BAF2465061100253583 /* ClockViewController.swift */; };
+		04375BB22465061100253583 /* ClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04375BB02465061100253583 /* ClockViewController.xib */; };
 		044AD891241B3A56009E407D /* mainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AD890241B3A56009E407D /* mainTableViewController.swift */; };
 		04D8EBCA2419CF3A00FF768D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8EBC92419CF3A00FF768D /* AppDelegate.swift */; };
 		04D8EBCC2419CF3A00FF768D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8EBCB2419CF3A00FF768D /* SceneDelegate.swift */; };
@@ -28,6 +30,10 @@
 		04D8EBD32419CF3D00FF768D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D8EBD22419CF3D00FF768D /* Assets.xcassets */; };
 		04D8EBD62419CF3D00FF768D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04D8EBD42419CF3D00FF768D /* LaunchScreen.storyboard */; };
 		04D8EBE12419CF3D00FF768D /* TimelyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8EBE02419CF3D00FF768D /* TimelyTests.swift */; };
+		04DFB3D3249353A5000233B2 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFB3D2249353A5000233B2 /* HomePageViewController.swift */; };
+		04DFB3D52493563C000233B2 /* DefineFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFB3D42493563C000233B2 /* DefineFile.swift */; };
+		04DFB3D82493577F000233B2 /* countTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFB3D72493577F000233B2 /* countTimer.swift */; };
+		04DFB3DB24937DB2000233B2 /* CommonFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DFB3DA24937DB2000233B2 /* CommonFunction.swift */; };
 		48233F34C7E9FD95B05950B0 /* Pods_Timely.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D298264B5F7800E6CE019CD /* Pods_Timely.framework */; };
 		D6C2B5D3A27FC619B4F162B2 /* Pods_TimelyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8440837725260A8DD8606BF5 /* Pods_TimelyTests.framework */; };
 /* End PBXBuildFile section */
@@ -71,6 +77,8 @@
 		04254F632444456F003813DF /* Timely-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Timely-Bridging-Header.h"; sourceTree = "<group>"; };
 		04254F6424444570003813DF /* XJCollectionViewCenterLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XJCollectionViewCenterLayout.m; sourceTree = "<group>"; };
 		04254F6524444570003813DF /* XJCollectionViewCenterLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XJCollectionViewCenterLayout.h; sourceTree = "<group>"; };
+		04375BAF2465061100253583 /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
+		04375BB02465061100253583 /* ClockViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClockViewController.xib; sourceTree = "<group>"; };
 		044AD890241B3A56009E407D /* mainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTableViewController.swift; sourceTree = "<group>"; };
 		04D8EBC62419CF3A00FF768D /* Timely.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timely.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D8EBC92419CF3A00FF768D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +91,10 @@
 		04D8EBDC2419CF3D00FF768D /* TimelyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimelyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D8EBE02419CF3D00FF768D /* TimelyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelyTests.swift; sourceTree = "<group>"; };
 		04D8EBE22419CF3D00FF768D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DFB3D2249353A5000233B2 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		04DFB3D42493563C000233B2 /* DefineFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefineFile.swift; sourceTree = "<group>"; };
+		04DFB3D72493577F000233B2 /* countTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countTimer.swift; sourceTree = "<group>"; };
+		04DFB3DA24937DB2000233B2 /* CommonFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunction.swift; sourceTree = "<group>"; };
 		1D298264B5F7800E6CE019CD /* Pods_Timely.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Timely.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82DE1B22DA373D4355BFB95B /* Pods-TimelyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimelyTests.release.xcconfig"; path = "Target Support Files/Pods-TimelyTests/Pods-TimelyTests.release.xcconfig"; sourceTree = "<group>"; };
 		8440837725260A8DD8606BF5 /* Pods_TimelyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimelyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +123,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		040012DA2493296100A27053 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04DFB3D2249353A5000233B2 /* HomePageViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		0401F7BE2445C5B0006C08CC /* XJCollectionViewCenterLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +138,22 @@
 				04254F6424444570003813DF /* XJCollectionViewCenterLayout.m */,
 			);
 			path = XJCollectionViewCenterLayout;
+			sourceTree = "<group>";
+		};
+		040A58392498A1D2006CEB1F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				04D8EBC92419CF3A00FF768D /* AppDelegate.swift */,
+				04D8EBCB2419CF3A00FF768D /* SceneDelegate.swift */,
+				04D8EBCD2419CF3A00FF768D /* ViewController.swift */,
+				04D8EBCF2419CF3A00FF768D /* Main.storyboard */,
+				044AD890241B3A56009E407D /* mainTableViewController.swift */,
+				04D8EBD22419CF3D00FF768D /* Assets.xcassets */,
+				04D8EBD42419CF3D00FF768D /* LaunchScreen.storyboard */,
+				04254F49243F01A0003813DF /* MainViewController.swift */,
+				04254F4A243F01A0003813DF /* MainViewController.xib */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		04254F4F243F149D003813DF /* MainView */ = {
@@ -131,6 +167,8 @@
 				04254F5E244062D5003813DF /* StoryTableViewCell.swift */,
 				0401F7842445A0AE006C08CC /* CategoryTableViewCell.swift */,
 				0401F78E2445A862006C08CC /* CategoryTableViewCell.xib */,
+				04375BAF2465061100253583 /* ClockViewController.swift */,
+				04375BB02465061100253583 /* ClockViewController.xib */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -138,7 +176,9 @@
 		04254F542440176E003813DF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				04DFB3D924937D7A000233B2 /* Timer */,
 				04254F56244017D8003813DF /* BannerLoopModel.swift */,
+				04DFB3D42493563C000233B2 /* DefineFile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -146,6 +186,7 @@
 		04254F552440179A003813DF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04DFB3D62493575C000233B2 /* Timer */,
 				04254F4F243F149D003813DF /* MainView */,
 			);
 			path = Views;
@@ -191,20 +232,13 @@
 		04D8EBC82419CF3A00FF768D /* Timely */ = {
 			isa = PBXGroup;
 			children = (
-				04254F6224444544003813DF /* supportFiles */,
+				040012DA2493296100A27053 /* Controller */,
 				04254F552440179A003813DF /* Views */,
 				04254F542440176E003813DF /* Models */,
 				046466A3243EEB0A008656BA /* image */,
-				04D8EBC92419CF3A00FF768D /* AppDelegate.swift */,
-				04D8EBCB2419CF3A00FF768D /* SceneDelegate.swift */,
-				04D8EBCD2419CF3A00FF768D /* ViewController.swift */,
-				04D8EBCF2419CF3A00FF768D /* Main.storyboard */,
-				044AD890241B3A56009E407D /* mainTableViewController.swift */,
-				04D8EBD22419CF3D00FF768D /* Assets.xcassets */,
-				04D8EBD42419CF3D00FF768D /* LaunchScreen.storyboard */,
+				040A58392498A1D2006CEB1F /* Main */,
+				04254F6224444544003813DF /* supportFiles */,
 				04D8EBD72419CF3D00FF768D /* Info.plist */,
-				04254F49243F01A0003813DF /* MainViewController.swift */,
-				04254F4A243F01A0003813DF /* MainViewController.xib */,
 			);
 			path = Timely;
 			sourceTree = "<group>";
@@ -216,6 +250,22 @@
 				04D8EBE22419CF3D00FF768D /* Info.plist */,
 			);
 			path = TimelyTests;
+			sourceTree = "<group>";
+		};
+		04DFB3D62493575C000233B2 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				04DFB3D72493577F000233B2 /* countTimer.swift */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		04DFB3D924937D7A000233B2 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				04DFB3DA24937DB2000233B2 /* CommonFunction.swift */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 		6D5482C80C7774EFF4DD5837 /* Frameworks */ = {
@@ -332,6 +382,7 @@
 				04D8EBD32419CF3D00FF768D /* Assets.xcassets in Resources */,
 				0401F78C2445A5CE006C08CC /* StoryCollectionViewCell.xib in Resources */,
 				04D8EBD12419CF3A00FF768D /* Main.storyboard in Resources */,
+				04375BB22465061100253583 /* ClockViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,11 +467,16 @@
 				04254F6624444570003813DF /* XJCollectionViewCenterLayout.m in Sources */,
 				04254F57244017D8003813DF /* BannerLoopModel.swift in Sources */,
 				044AD891241B3A56009E407D /* mainTableViewController.swift in Sources */,
+				04DFB3DB24937DB2000233B2 /* CommonFunction.swift in Sources */,
 				04D8EBCE2419CF3A00FF768D /* ViewController.swift in Sources */,
 				0401F78B2445A5CE006C08CC /* StoryCollectionViewCell.swift in Sources */,
+				04DFB3D82493577F000233B2 /* countTimer.swift in Sources */,
 				04D8EBCA2419CF3A00FF768D /* AppDelegate.swift in Sources */,
+				04DFB3D52493563C000233B2 /* DefineFile.swift in Sources */,
 				04254F52243F14D0003813DF /* BannerLoopCell.swift in Sources */,
 				04D8EBCC2419CF3A00FF768D /* SceneDelegate.swift in Sources */,
+				04DFB3D3249353A5000233B2 /* HomePageViewController.swift in Sources */,
+				04375BB12465061100253583 /* ClockViewController.swift in Sources */,
 				0401F78A2445A5CE006C08CC /* StoryCollectionView.swift in Sources */,
 				04254F4B243F01A0003813DF /* MainViewController.swift in Sources */,
 				04254F60244062D5003813DF /* StoryTableViewCell.swift in Sources */,
