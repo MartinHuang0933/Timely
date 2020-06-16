@@ -23,6 +23,22 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
         </scene>
+        <!--Home Page View Controller-->
+        <scene sceneID="8rD-Qr-Gol">
+            <objects>
+                <viewController id="tyM-wT-6GK" customClass="HomePageViewController" customModule="Timely" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="byo-6p-GDX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="TYe-89-NLg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ff2-Qy-CzG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CpD-WJ-zVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1863" y="-619"/>
+        </scene>
         <!--探索-->
         <scene sceneID="dBA-XT-tEu">
             <objects>
@@ -205,7 +221,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="tX0-ZV-EYt" kind="relationship" relationship="rootViewController" id="e3H-FM-MnZ"/>
+                        <segue destination="tyM-wT-6GK" kind="relationship" relationship="rootViewController" id="Zww-NF-Tqk"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yig-DS-TtJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

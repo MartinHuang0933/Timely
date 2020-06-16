@@ -11,7 +11,7 @@ import SDWebImage
 
 class StoryTableViewCell: UITableViewCell {
     
-    @IBOutlet var demoCollectionView: UICollectionView!
+    @IBOutlet var demoCollectionView: UICollectionView! 
     
     var userDataArray:NSMutableArray?
 
