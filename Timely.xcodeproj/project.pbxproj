@@ -22,6 +22,8 @@
 		040A584E249A0F16006CEB1F /* ToDoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040A584C249A0F16006CEB1F /* ToDoListViewController.xib */; };
 		040A5850249B3F9C006CEB1F /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A584F249B3F9C006CEB1F /* TimerModel.swift */; };
 		040A5853249B5D8E006CEB1F /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A5852249B5D8E006CEB1F /* DateExtension.swift */; };
+		040A5856249B7227006CEB1F /* TodoListSubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A5854249B7227006CEB1F /* TodoListSubTableViewCell.swift */; };
+		040A5857249B7227006CEB1F /* TodoListSubTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040A5855249B7227006CEB1F /* TodoListSubTableViewCell.xib */; };
 		04254F4B243F01A0003813DF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04254F49243F01A0003813DF /* MainViewController.swift */; };
 		04254F4C243F01A0003813DF /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04254F4A243F01A0003813DF /* MainViewController.xib */; };
 		04254F4E243F13CB003813DF /* 截圖 2020-04-08 下午2.08.26.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04254F4D243F13CB003813DF /* 截圖 2020-04-08 下午2.08.26.gif */; };
@@ -86,6 +88,8 @@
 		040A584C249A0F16006CEB1F /* ToDoListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoListViewController.xib; sourceTree = "<group>"; };
 		040A584F249B3F9C006CEB1F /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
 		040A5852249B5D8E006CEB1F /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		040A5854249B7227006CEB1F /* TodoListSubTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListSubTableViewCell.swift; sourceTree = "<group>"; };
+		040A5855249B7227006CEB1F /* TodoListSubTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoListSubTableViewCell.xib; sourceTree = "<group>"; };
 		04254F49243F01A0003813DF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		04254F4A243F01A0003813DF /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		04254F4D243F13CB003813DF /* 截圖 2020-04-08 下午2.08.26.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "截圖 2020-04-08 下午2.08.26.gif"; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 			children = (
 				040A583D2498CAA9006CEB1F /* TodoListTableViewCell.swift */,
 				040A583E2498CAA9006CEB1F /* TodoListTableViewCell.xib */,
+				040A5854249B7227006CEB1F /* TodoListSubTableViewCell.swift */,
+				040A5855249B7227006CEB1F /* TodoListSubTableViewCell.xib */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -427,6 +433,7 @@
 				0401F78C2445A5CE006C08CC /* StoryCollectionViewCell.xib in Resources */,
 				040A584E249A0F16006CEB1F /* ToDoListViewController.xib in Resources */,
 				040A58402498CAA9006CEB1F /* TodoListTableViewCell.xib in Resources */,
+				040A5857249B7227006CEB1F /* TodoListSubTableViewCell.xib in Resources */,
 				04D8EBD12419CF3A00FF768D /* Main.storyboard in Resources */,
 				04375BB22465061100253583 /* ClockViewController.xib in Resources */,
 			);
@@ -526,6 +533,7 @@
 				04D8EBCC2419CF3A00FF768D /* SceneDelegate.swift in Sources */,
 				040A5853249B5D8E006CEB1F /* DateExtension.swift in Sources */,
 				04DFB3D3249353A5000233B2 /* HomePageViewController.swift in Sources */,
+				040A5856249B7227006CEB1F /* TodoListSubTableViewCell.swift in Sources */,
 				04375BB12465061100253583 /* ClockViewController.swift in Sources */,
 				0401F78A2445A5CE006C08CC /* StoryCollectionView.swift in Sources */,
 				04254F4B243F01A0003813DF /* MainViewController.swift in Sources */,

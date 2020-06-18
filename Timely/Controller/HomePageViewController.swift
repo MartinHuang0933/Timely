@@ -65,7 +65,6 @@ class HomePageViewController: UIViewController {
     }
     
     @objc func uptadeTimer() {
-        print("uptadeTimer")
         if self.timer != nil {
             self.timer?.invalidate()
             self.timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(uptadeTimer), userInfo: nil, repeats: false)

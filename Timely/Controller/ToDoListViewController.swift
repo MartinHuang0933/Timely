@@ -29,8 +29,10 @@ class ToDoListViewController: UIViewController {
         
         self.view.backgroundColor = MTColor_BG_Lv1
         self.view.addSubview(mainTbl)
-        let nib = UINib(nibName: "TodoListTableViewCell", bundle: nil)
-        self.mainTbl.register(nib, forCellReuseIdentifier: "TodoListTableViewCell")
+        self.mainTbl.register(UINib(nibName: "TodoListTableViewCell", bundle: nil),
+                              forCellReuseIdentifier: "TodoListTableViewCell")
+        self.mainTbl.register(UINib(nibName: "TodoListSubTableViewCell", bundle: nil),
+                              forCellReuseIdentifier: "TodoListSubTableViewCell")
         
         cellModels = getCalendarData()
         
@@ -96,8 +98,16 @@ extension ToDoListViewController: UITableViewDelegate , UITableViewDataSource
         return UIView()
     }
     
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView()
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        300
+        if indexPath.row == 0 {
+            return 300
+        }else{
+            return 100
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -105,9 +115,14 @@ extension ToDoListViewController: UITableViewDelegate , UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TodoListTableViewCell", for: indexPath) as! TodoListTableViewCell
-        cell.setModel(model: cellModels![indexPath.row])
-        return cell
+        if indexPath.row == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TodoListTableViewCell", for: indexPath) as! TodoListTableViewCell
+            cell.setModel(model: cellModels![indexPath.row])
+            return cell
+        }else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TodoListSubTableViewCell", for: indexPath) as! TodoListSubTableViewCell
+            return cell
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
