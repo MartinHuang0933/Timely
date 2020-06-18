@@ -15,5 +15,10 @@ target 'Timely' do
   pod 'SDWebImage'
   pod 'LLCycleScrollView'
   pod 'SnapKit'
-
+  pod 'XJCollectionViewManager'
+  pod 'XJBase'
+  pod 'JXPagingView/Paging' 
+  pod 'MJRefresh', '3.4.0'
+  pod 'JXSegmentedView'
+  pod 'DNSPageView'
 end

@@ -13,6 +13,15 @@
 		0401F78C2445A5CE006C08CC /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0401F7882445A5CE006C08CC /* StoryCollectionViewCell.xib */; };
 		0401F78D2445A5CE006C08CC /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0401F7892445A5CE006C08CC /* StoryTableViewCell.xib */; };
 		0401F78F2445A862006C08CC /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0401F78E2445A862006C08CC /* CategoryTableViewCell.xib */; };
+		040A583F2498CAA9006CEB1F /* TodoListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A583D2498CAA9006CEB1F /* TodoListTableViewCell.swift */; };
+		040A58402498CAA9006CEB1F /* TodoListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040A583E2498CAA9006CEB1F /* TodoListTableViewCell.xib */; };
+		040A58422499F24C006CEB1F /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A58412499F24B006CEB1F /* ListViewController.swift */; };
+		040A5849249A0810006CEB1F /* NowTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A5847249A0810006CEB1F /* NowTimeViewController.swift */; };
+		040A584A249A0810006CEB1F /* NowTimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040A5848249A0810006CEB1F /* NowTimeViewController.xib */; };
+		040A584D249A0F16006CEB1F /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A584B249A0F16006CEB1F /* ToDoListViewController.swift */; };
+		040A584E249A0F16006CEB1F /* ToDoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040A584C249A0F16006CEB1F /* ToDoListViewController.xib */; };
+		040A5850249B3F9C006CEB1F /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A584F249B3F9C006CEB1F /* TimerModel.swift */; };
+		040A5853249B5D8E006CEB1F /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040A5852249B5D8E006CEB1F /* DateExtension.swift */; };
 		04254F4B243F01A0003813DF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04254F49243F01A0003813DF /* MainViewController.swift */; };
 		04254F4C243F01A0003813DF /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04254F4A243F01A0003813DF /* MainViewController.xib */; };
 		04254F4E243F13CB003813DF /* 截圖 2020-04-08 下午2.08.26.gif in Resources */ = {isa = PBXBuildFile; fileRef = 04254F4D243F13CB003813DF /* 截圖 2020-04-08 下午2.08.26.gif */; };
@@ -68,6 +77,15 @@
 		0401F7882445A5CE006C08CC /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		0401F7892445A5CE006C08CC /* StoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
 		0401F78E2445A862006C08CC /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
+		040A583D2498CAA9006CEB1F /* TodoListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListTableViewCell.swift; sourceTree = "<group>"; };
+		040A583E2498CAA9006CEB1F /* TodoListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoListTableViewCell.xib; sourceTree = "<group>"; };
+		040A58412499F24B006CEB1F /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		040A5847249A0810006CEB1F /* NowTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowTimeViewController.swift; sourceTree = "<group>"; };
+		040A5848249A0810006CEB1F /* NowTimeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NowTimeViewController.xib; sourceTree = "<group>"; };
+		040A584B249A0F16006CEB1F /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
+		040A584C249A0F16006CEB1F /* ToDoListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoListViewController.xib; sourceTree = "<group>"; };
+		040A584F249B3F9C006CEB1F /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
+		040A5852249B5D8E006CEB1F /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		04254F49243F01A0003813DF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		04254F4A243F01A0003813DF /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		04254F4D243F13CB003813DF /* 截圖 2020-04-08 下午2.08.26.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "截圖 2020-04-08 下午2.08.26.gif"; sourceTree = "<group>"; };
@@ -126,7 +144,12 @@
 		040012DA2493296100A27053 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				040A58412499F24B006CEB1F /* ListViewController.swift */,
 				04DFB3D2249353A5000233B2 /* HomePageViewController.swift */,
+				040A5847249A0810006CEB1F /* NowTimeViewController.swift */,
+				040A5848249A0810006CEB1F /* NowTimeViewController.xib */,
+				040A584B249A0F16006CEB1F /* ToDoListViewController.swift */,
+				040A584C249A0F16006CEB1F /* ToDoListViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -154,6 +177,23 @@
 				04254F4A243F01A0003813DF /* MainViewController.xib */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		040A583A2498A900006CEB1F /* ToDoList */ = {
+			isa = PBXGroup;
+			children = (
+				040A583D2498CAA9006CEB1F /* TodoListTableViewCell.swift */,
+				040A583E2498CAA9006CEB1F /* TodoListTableViewCell.xib */,
+			);
+			path = ToDoList;
+			sourceTree = "<group>";
+		};
+		040A5851249B5D25006CEB1F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				040A5852249B5D8E006CEB1F /* DateExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		04254F4F243F149D003813DF /* MainView */ = {
@@ -186,6 +226,7 @@
 		04254F552440179A003813DF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				040A583A2498A900006CEB1F /* ToDoList */,
 				04DFB3D62493575C000233B2 /* Timer */,
 				04254F4F243F149D003813DF /* MainView */,
 			);
@@ -232,6 +273,7 @@
 		04D8EBC82419CF3A00FF768D /* Timely */ = {
 			isa = PBXGroup;
 			children = (
+				040A5851249B5D25006CEB1F /* Extension */,
 				040012DA2493296100A27053 /* Controller */,
 				04254F552440179A003813DF /* Views */,
 				04254F542440176E003813DF /* Models */,
@@ -264,6 +306,7 @@
 			isa = PBXGroup;
 			children = (
 				04DFB3DA24937DB2000233B2 /* CommonFunction.swift */,
+				040A584F249B3F9C006CEB1F /* TimerModel.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -376,11 +419,14 @@
 			files = (
 				04D8EBD62419CF3D00FF768D /* LaunchScreen.storyboard in Resources */,
 				0401F78D2445A5CE006C08CC /* StoryTableViewCell.xib in Resources */,
+				040A584A249A0810006CEB1F /* NowTimeViewController.xib in Resources */,
 				04254F4E243F13CB003813DF /* 截圖 2020-04-08 下午2.08.26.gif in Resources */,
 				0401F78F2445A862006C08CC /* CategoryTableViewCell.xib in Resources */,
 				04254F4C243F01A0003813DF /* MainViewController.xib in Resources */,
 				04D8EBD32419CF3D00FF768D /* Assets.xcassets in Resources */,
 				0401F78C2445A5CE006C08CC /* StoryCollectionViewCell.xib in Resources */,
+				040A584E249A0F16006CEB1F /* ToDoListViewController.xib in Resources */,
+				040A58402498CAA9006CEB1F /* TodoListTableViewCell.xib in Resources */,
 				04D8EBD12419CF3A00FF768D /* Main.storyboard in Resources */,
 				04375BB22465061100253583 /* ClockViewController.xib in Resources */,
 			);
@@ -468,18 +514,24 @@
 				04254F57244017D8003813DF /* BannerLoopModel.swift in Sources */,
 				044AD891241B3A56009E407D /* mainTableViewController.swift in Sources */,
 				04DFB3DB24937DB2000233B2 /* CommonFunction.swift in Sources */,
+				040A584D249A0F16006CEB1F /* ToDoListViewController.swift in Sources */,
 				04D8EBCE2419CF3A00FF768D /* ViewController.swift in Sources */,
+				040A5849249A0810006CEB1F /* NowTimeViewController.swift in Sources */,
 				0401F78B2445A5CE006C08CC /* StoryCollectionViewCell.swift in Sources */,
 				04DFB3D82493577F000233B2 /* countTimer.swift in Sources */,
 				04D8EBCA2419CF3A00FF768D /* AppDelegate.swift in Sources */,
+				040A5850249B3F9C006CEB1F /* TimerModel.swift in Sources */,
 				04DFB3D52493563C000233B2 /* DefineFile.swift in Sources */,
 				04254F52243F14D0003813DF /* BannerLoopCell.swift in Sources */,
 				04D8EBCC2419CF3A00FF768D /* SceneDelegate.swift in Sources */,
+				040A5853249B5D8E006CEB1F /* DateExtension.swift in Sources */,
 				04DFB3D3249353A5000233B2 /* HomePageViewController.swift in Sources */,
 				04375BB12465061100253583 /* ClockViewController.swift in Sources */,
 				0401F78A2445A5CE006C08CC /* StoryCollectionView.swift in Sources */,
 				04254F4B243F01A0003813DF /* MainViewController.swift in Sources */,
 				04254F60244062D5003813DF /* StoryTableViewCell.swift in Sources */,
+				040A583F2498CAA9006CEB1F /* TodoListTableViewCell.swift in Sources */,
+				040A58422499F24C006CEB1F /* ListViewController.swift in Sources */,
 				0401F7852445A0AE006C08CC /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -650,6 +702,7 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers\"",
 				);
 				INFOPLIST_FILE = Timely/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -690,6 +743,7 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.framework/Headers\"",
 				);
 				INFOPLIST_FILE = Timely/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -15,7 +15,6 @@ class CommonFunction: NSObject {
         var calendar = Calendar.current
         // *** define calendar components to use as well Timezone to UTC ***
         calendar.timeZone = TimeZone(identifier: "Asia/Taipei")!
-        
         return calendar
     }
     

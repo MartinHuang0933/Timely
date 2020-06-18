@@ -1,77 +1,75 @@
 //
-//  HomePageViewController.swift
-//  Timely
+//  BaseViewController.swift
+//  JXPagingView
 //
-//  Created by Mac on 2020/6/12.
-//  Copyright © 2020 Martin. All rights reserved.
+//  Created by jiaxin on 2018/8/10.
+//  Copyright © 2018年 jiaxin. All rights reserved.
 //
 
 import UIKit
-import SnapKit
+import DNSPageView
 
 class HomePageViewController: UIViewController {
     
-    let pageNumber : CGFloat = 3
     var timer: Timer?
-    let timerView = countTimer()
-
-    lazy var mainScroll: UIScrollView = {
-        let mainScroll = UIScrollView()
-        mainScroll.backgroundColor = #colorLiteral(red: 0.1271939278, green: 0.1271939278, blue: 0.1271939278, alpha: 1)
-        mainScroll.contentSize = CGSize(width: (KScreenWidth * pageNumber), height: 0)
-        mainScroll.isPagingEnabled = true
-        return mainScroll
-    }()
     
-    lazy var contentView: UIView = {
-        let contentView = UIView()
-        return contentView 
+    private lazy var pageViewManager: PageViewManager = {
+        // 创建PageStyle，设置样式
+        let style = PageStyle()
+        style.isShowBottomLine = true
+        style.isTitleViewScrollEnabled = true
+        style.titleViewBackgroundColor = UIColor.clear
+        
+        // 设置标题内容
+        let titles = ["時鐘", "待辦", "設定"]
+        let controllers = ["NowTimeViewController", "ListViewController", "NowTimeViewController"]
+        
+        let controller1 = NowTimeViewController()
+        let controller2 = ToDoListViewController()
+        let controller3 = NowTimeViewController()
+        
+        addChild(controller1)
+        addChild(controller2)
+        addChild(controller3)
+        
+        return PageViewManager(style: style, titles: titles, childViewControllers: children)
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationController?.setNavigationBarHidden(true, animated: false)
-        view.addSubview(mainScroll);
-        mainScroll.addSubview(contentView)
-        contentView.addSubview(timerView)
+        startTimer()
         
-        initializeLayout()
+        // 单独设置titleView的frame
+        navigationItem.titleView = pageViewManager.titleView
+        pageViewManager.titleView.frame = CGRect(x: 0, y: 0, width: 180, height: 0)
         
-        self.timer = Timer.scheduledTimer(timeInterval: 1, target: timerView, selector: #selector(timerView.refreshTimeText), userInfo: nil, repeats: true)
-    }
-    
-    func initializeLayout() {
-        
-        KScreenWidth = UIScreen.main.bounds.size.width
-        
-        mainScroll.snp.remakeConstraints { (make) -> Void in
-            make.edges.equalTo(view)
+        // 单独设置contentView的大小和位置，可以使用autolayout或者frame
+        let contentView = pageViewManager.contentView
+        view.addSubview(pageViewManager.contentView)
+        contentView.snp.makeConstraints { (maker) in
+            maker.edges.equalToSuperview()
         }
         
-        contentView.snp.remakeConstraints { (make) -> Void in
-            make.left.right.top.bottom.equalTo(mainScroll)
-            make.width.equalTo(KScreenWidth * pageNumber)
-        }
-        
-        timerView.snp.remakeConstraints { (make) -> Void in
-            make.top.bottom.equalTo(view)
-            make.left.equalTo(contentView)
-            make.width.equalTo(KScreenWidth)
+        if #available(iOS 11, *) {
+            contentView.collectionView.contentInsetAdjustmentBehavior = .never
+        } else {
+            automaticallyAdjustsScrollViewInsets = false
         }
     }
     
-    override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
-        
-        initializeLayout()
-        
-        // 告诉self.view约束需要更新
-        self.view.needsUpdateConstraints()
-        // 调用此方法告诉self.view检测是否需要更新约束，若需要则更新，下面添加动画效果才起作用
-        self.view.updateConstraintsIfNeeded()
+    func startTimer() {
+        let nowSecond = CommonFunction.getCalendar().component(.second, from: Date().localDate())
+        let loopTime = Double(60-nowSecond)
+        self.timer = Timer.scheduledTimer(timeInterval: loopTime, target: self, selector: #selector(uptadeTimer), userInfo: nil, repeats: false)
+    }
     
-        UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.2, delay: 0, animations: {
-            self.view.layoutIfNeeded()
-        }, completion: nil)
+    @objc func uptadeTimer() {
+        print("uptadeTimer")
+        if self.timer != nil {
+            self.timer?.invalidate()
+            self.timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(uptadeTimer), userInfo: nil, repeats: false)
+        }
+        NotificationCenter.default.post(name: Notification.Name(rawValue: MT_TIMER_REFRESH), object: nil, userInfo:nil)
     }
 }

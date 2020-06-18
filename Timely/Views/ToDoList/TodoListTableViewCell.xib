@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="208" id="KGk-i7-Jjw" customClass="TodoListTableViewCell" customModule="Timely" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cel-jk-kaX">
+                        <rect key="frame" x="20" y="8" width="280" height="284"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BmH-4F-ywc">
+                                <rect key="frame" x="15" y="15" width="250" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="y0b-zh-u9t"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="測試文字測試文字" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H9V-sp-8KG">
+                                <rect key="frame" x="15" y="173" width="250" height="24"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="時間：12:00 - 13:00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kmm-H0-FNS">
+                                <rect key="frame" x="15" y="261" width="250" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="cMf-xZ-Huf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.4119307995" green="0.41133940219999998" blue="0.4352978468" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2057304382" green="0.2114129663" blue="0.38433146480000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="H9V-sp-8KG" firstAttribute="leading" secondItem="cel-jk-kaX" secondAttribute="leading" constant="15" id="D6b-Fl-2vN"/>
+                            <constraint firstItem="Kmm-H0-FNS" firstAttribute="leading" secondItem="cel-jk-kaX" secondAttribute="leading" constant="15" id="KYq-sU-Sa7"/>
+                            <constraint firstItem="BmH-4F-ywc" firstAttribute="leading" secondItem="cel-jk-kaX" secondAttribute="leading" constant="15" id="M2A-vZ-yjT"/>
+                            <constraint firstAttribute="trailing" secondItem="Kmm-H0-FNS" secondAttribute="trailing" constant="15" id="MmJ-xx-47T"/>
+                            <constraint firstAttribute="trailing" secondItem="BmH-4F-ywc" secondAttribute="trailing" constant="15" id="O8p-RA-cPa"/>
+                            <constraint firstAttribute="bottom" secondItem="Kmm-H0-FNS" secondAttribute="bottom" constant="8" id="QIF-IE-68B"/>
+                            <constraint firstItem="BmH-4F-ywc" firstAttribute="top" secondItem="cel-jk-kaX" secondAttribute="top" constant="15" id="Vf5-ke-i3F"/>
+                            <constraint firstItem="H9V-sp-8KG" firstAttribute="top" secondItem="BmH-4F-ywc" secondAttribute="bottom" constant="8" id="dzE-ap-2FO"/>
+                            <constraint firstAttribute="trailing" secondItem="H9V-sp-8KG" secondAttribute="trailing" constant="15" id="jqk-K9-uhL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="cel-jk-kaX" secondAttribute="trailing" constant="20" id="0Nt-Gv-L9D"/>
+                    <constraint firstAttribute="bottom" secondItem="cel-jk-kaX" secondAttribute="bottom" constant="8" id="ETc-6T-eR6"/>
+                    <constraint firstItem="cel-jk-kaX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="UYD-Z6-NVC"/>
+                    <constraint firstItem="cel-jk-kaX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="mdD-7x-VQM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="mainContainer" destination="cel-jk-kaX" id="JND-J2-TuA"/>
+                <outlet property="timeLabel" destination="Kmm-H0-FNS" id="INH-KE-yFQ"/>
+                <outlet property="timerContainer" destination="BmH-4F-ywc" id="SoO-NL-343"/>
+                <outlet property="titleLabel" destination="H9V-sp-8KG" id="2Kb-bY-ztT"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="168.08035714285714"/>
+        </tableViewCell>
+    </objects>
+</document>
