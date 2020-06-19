@@ -58,19 +58,22 @@ class ToDoListViewController: UIViewController {
             let calendars = eventStore.calendars(for: .event)
             for calendar in calendars
             {
-                let nowTime = Date(timeIntervalSinceNow: 0)
-                let oneMonthAfter = Date(timeIntervalSinceNow: +1*24*3600)
-                let predicate = eventStore.predicateForEvents(withStart: nowTime, end: oneMonthAfter, calendars: [calendar])
-                let events = eventStore.events(matching: predicate)
-                
-                for event in events
+                if calendar.title == "家庭"
                 {
-                    let startDate = Calendar.current.date(byAdding: .hour, value: +8, to: event.startDate)
-                    let endDate = Calendar.current.date(byAdding: .hour, value: +8, to: event.endDate)
-                    let model = TimerModel(startDate: startDate!,
-                                           endDate: endDate!,
-                                           title: event.title)
-                    result.append(model)
+                    let nowTime = Date(timeIntervalSinceNow: 0)
+                    let oneMonthAfter = Date(timeIntervalSinceNow: +1*24*3600)
+                    let predicate = eventStore.predicateForEvents(withStart: nowTime, end: oneMonthAfter, calendars: [calendar])
+                    let events = eventStore.events(matching: predicate)
+                    
+                    for event in events
+                    {
+                        let startDate = event.startDate
+                        let endDate = event.endDate
+                        let model = TimerModel(startDate: startDate!,
+                                               endDate: endDate!,
+                                               title: event.title)
+                        result.append(model)
+                    }
                 }
             }
             semaphore.signal()
@@ -88,6 +91,7 @@ class ToDoListViewController: UIViewController {
     }
     
     @objc func refreshMainTbl() {
+        cellModels = getCalendarData()
         mainTbl.reloadData()
     }
 }
@@ -106,7 +110,7 @@ extension ToDoListViewController: UITableViewDelegate , UITableViewDataSource
         if indexPath.row == 0 {
             return 300
         }else{
-            return 100
+            return 120
         }
     }
     
@@ -118,14 +122,13 @@ extension ToDoListViewController: UITableViewDelegate , UITableViewDataSource
         if indexPath.row == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "TodoListTableViewCell", for: indexPath) as! TodoListTableViewCell
             cell.setModel(model: cellModels![indexPath.row])
+            cell.selectionStyle = .none
             return cell
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "TodoListSubTableViewCell", for: indexPath) as! TodoListSubTableViewCell
+            cell.setModel(model: cellModels![indexPath.row])
+            cell.selectionStyle = .none
             return cell
         }
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("12312312313232321321312")
     }
 }

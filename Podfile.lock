@@ -1,8 +1,6 @@
 PODS:
   - DNSPageView (1.5.0)
-  - DZNEmptyDataSet (1.8.1)
   - JXPagingView/Paging (2.0.6)
-  - JXSegmentedView (1.1.0)
   - Kingfisher (5.13.2):
     - Kingfisher/Core (= 5.13.2)
   - Kingfisher/Core (5.13.2)
@@ -13,57 +11,38 @@ PODS:
     - SDWebImage/Core (= 5.6.1)
   - SDWebImage/Core (5.6.1)
   - SnapKit (5.0.1)
-  - XJBase (0.1.4):
-    - XJCollectionViewManager (<= 0.1.51)
-    - XJScrollViewStateManager (<= 0.1.13)
-    - XJTableViewManager (<= 0.1.82)
-  - XJCollectionViewManager (0.1.51)
-  - XJScrollViewStateManager (0.1.13):
-    - DZNEmptyDataSet
-  - XJTableViewManager (0.1.82)
+  - ViewAnimator (2.7.0)
 
 DEPENDENCIES:
   - DNSPageView
   - JXPagingView/Paging
-  - JXSegmentedView
   - LLCycleScrollView
   - MJRefresh (= 3.4.0)
   - SDWebImage
   - SnapKit
-  - XJBase
-  - XJCollectionViewManager
+  - ViewAnimator
 
 SPEC REPOS:
   trunk:
     - DNSPageView
-    - DZNEmptyDataSet
     - JXPagingView
-    - JXSegmentedView
     - Kingfisher
     - LLCycleScrollView
     - MJRefresh
     - SDWebImage
     - SnapKit
-    - XJBase
-    - XJCollectionViewManager
-    - XJScrollViewStateManager
-    - XJTableViewManager
+    - ViewAnimator
 
 SPEC CHECKSUMS:
   DNSPageView: e3dc48f07c40f061d285150ab0cdc466f913230d
-  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   JXPagingView: 5851fb8cc964d0cbd93e9611077f7bc1fca05fee
-  JXSegmentedView: 072a2979323f98fc5d0e0e5dc2342549ae8a5c8f
   Kingfisher: d342c8354c10c3d85a27d6d4c42c41285924b898
   LLCycleScrollView: a08f666671f9fd1a205df9defebc3c217d59abc8
   MJRefresh: 95b08b3b8b6457d2c69510439e0349599050ea34
   SDWebImage: 7edb9c3ea661e77a66661f7f044de8c1b55d1120
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  XJBase: 02c2a2d75273ee851a75a0a9a4de78b8f346eb4f
-  XJCollectionViewManager: 029b34b52590711e4e4dce24b4a48ed74a75b34e
-  XJScrollViewStateManager: 0812131e771a40f17c5fbfb9dd47d3541e923909
-  XJTableViewManager: 6d3828e3bcb8dabda93a741ddfbc619ca39506bc
+  ViewAnimator: 5af1c6f3b310f012bf081259c43717aa54fbae73
 
-PODFILE CHECKSUM: 0f4507569d7abbc97e6645618459e0e4e4208384
+PODFILE CHECKSUM: 4f61b7df28f002f452ff9c2a40b631060c35a653
 
 COCOAPODS: 1.8.4

@@ -6,7 +6,21 @@
 //  Copyright © 2020 Martin. All rights reserved.
 //
 
-extension Date {
+extension Date
+{
+    /**
+    將Date轉換為台北時區 
+    */
+    func date2TaipeiDate(date:Date) -> Date
+    {
+        let timeZoneOffset = Double(TimeZone.current.secondsFromGMT(for: date))
+        guard let localDate = Calendar.current.date(byAdding: .second, value: Int(timeZoneOffset), to: date) else {return Date()}
+        return localDate
+    }
+    
+    /**
+     取得當地時間
+     */
     func localDate() -> Date {
         let nowUTC = Date()
         let timeZoneOffset = Double(TimeZone.current.secondsFromGMT(for: nowUTC))
@@ -14,6 +28,9 @@ extension Date {
         return localDate
     }
     
+    /**
+     取得輸入Date與現在時間相差的時分秒
+     */
     func compareCurrntTimeComponents(date:Date) -> DateComponents
     {
         let nowdate = Date().localDate()
@@ -21,13 +38,27 @@ extension Date {
         return compareComponents
     }
     
+    /**
+     取得輸入Date與現在時間相差的時分(返回文字)
+     */
     func compareCurrntTime(date:Date) -> (hour:String, minute:String)
     {
         let nowdate = Date().localDate()
         let compareComponents = CommonFunction.getCalendar().dateComponents([.hour, .minute], from: nowdate, to: date)
-        //根据时间差 做所对应的文字描述 (作为返回文字描述)
         let hourText = String(format: "%02d", compareComponents.hour!)
         let minuteText = String(format: "%02d", compareComponents.minute!+1)
         return (hour:hourText, minute:minuteText)
+    }
+    
+    /**
+    將Date轉換為輸入格式的文字
+    */
+    func date2String(_ date:Date, dateFormat:String = "yyyy-MM-dd HH:mm:ss") -> String
+    {
+        let formatter = DateFormatter()
+        formatter.dateFormat = dateFormat
+        formatter.timeZone = TimeZone(identifier: "Asia/Taipei")
+        let resultdate = formatter.string(from: date)
+        return resultdate
     }
 }

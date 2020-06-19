@@ -21,16 +21,14 @@ class HomePageViewController: UIViewController {
         style.titleViewBackgroundColor = UIColor.clear
         
         // 设置标题内容
-        let titles = ["時鐘", "待辦", "設定"]
-        let controllers = ["NowTimeViewController", "ListViewController", "NowTimeViewController"]
+        let titles = ["時鐘", "待辦"]
+        let controllers = ["NowTimeViewController", "ListViewController"]
         
         let controller1 = NowTimeViewController()
         let controller2 = ToDoListViewController()
-        let controller3 = NowTimeViewController()
         
         addChild(controller1)
         addChild(controller2)
-        addChild(controller3)
         
         return PageViewManager(style: style, titles: titles, childViewControllers: children)
     }()

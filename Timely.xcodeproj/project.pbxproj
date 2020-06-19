@@ -728,7 +728,7 @@
 					"-framework",
 					"\"SDWebImage\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Martin.IGPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Martin.Timely;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Timely/supportFiles/Timely-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -769,7 +769,7 @@
 					"-framework",
 					"\"SDWebImage\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Martin.IGPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Martin.Timely;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Timely/supportFiles/Timely-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
