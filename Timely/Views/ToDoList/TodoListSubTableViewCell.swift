@@ -39,9 +39,9 @@ class TodoListSubTableViewCell: UITableViewCell {
     }
     
     func setModel(model:TimerModel) {
-        let stratDate = Date().date2String(model.startDate, dateFormat: "HH:mm")
-        let endDate = Date().date2String(model.endDate, dateFormat: "HH:mm")
-        timeLabel.text = "時間：\(stratDate) - \(endDate)"
+        let stratDate = Date().date2String(model.startDate, dateFormat: "MM/dd HH:mm")
+        let endDate = Date().date2String(model.endDate, dateFormat: "MM/dd HH:mm")
+        timeLabel.text = "時間：\(stratDate)  ～  \(endDate)"
         titleLabel.text = model.title
     }
 }

@@ -116,8 +116,9 @@ class countTimer: UIView {
             MinuteLabel.text = "\(CommonFunction.getMinute())"
         }else{
             if let timermodel = timerModel {
+                let startDate = Date().date2TaipeiDate(date: timermodel.startDate)
                 let endDate = Date().date2TaipeiDate(date: timermodel.endDate)
-                let currntTime = Date().compareCurrntTime(date: endDate)
+                let currntTime = Date().compareCurrntTime(start: startDate, end: endDate)
                 HourLabel.text = currntTime.hour
                 MinuteLabel.text = currntTime.minute
             }

@@ -41,13 +41,46 @@ extension Date
     /**
      取得輸入Date與現在時間相差的時分(返回文字)
      */
-    func compareCurrntTime(date:Date) -> (hour:String, minute:String)
+    func compareCurrntTime(start:Date,end:Date) -> (hour:String, minute:String)
     {
         let nowdate = Date().localDate()
-        let compareComponents = CommonFunction.getCalendar().dateComponents([.hour, .minute], from: nowdate, to: date)
-        let hourText = String(format: "%02d", compareComponents.hour!)
-        let minuteText = String(format: "%02d", compareComponents.minute!+1)
+        
+//        let compareStartDate = CommonFunction.getCalendar().dateComponents([.hour, .minute], from: nowdate, to: start)
+        
+        var hour : Int!
+        var minute : Int!
+        
+//        if compareStartDate.hour!<0 || compareStartDate.minute!<0
+//        {
+//            hour = compareStartDate.hour!
+//            minute = abs(compareStartDate.minute!)
+//        }
+//        else
+//        {
+            let compareEndDate = CommonFunction.getCalendar().dateComponents([.hour, .minute], from: nowdate, to: end)
+            hour = compareEndDate.hour!
+            minute = compareEndDate.minute! + 1
+            if minute == 60 {
+                hour += 1
+                minute = 0
+            }
+//        }
+        let hourText = String(format: "%02d", hour)
+        let minuteText = String(format: "%02d", minute)
         return (hour:hourText, minute:minuteText)
+        
+        /*
+        let compareComponents = CommonFunction.getCalendar().dateComponents([.hour, .minute], from: nowdate, to: end)
+        var hour = compareComponents.hour!
+        var minute = compareComponents.minute! + 1
+        if minute == 60 {
+            hour += 1
+            minute = 0
+        }
+        let hourText = String(format: "%02d", hour)
+        let minuteText = String(format: "%02d", minute)
+        return (hour:hourText, minute:minuteText)
+        */
     }
     
     /**

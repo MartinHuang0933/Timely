@@ -22,4 +22,5 @@ target 'Timely' do
   #pod 'JXSegmentedView'
   pod 'DNSPageView'
   pod 'ViewAnimator'
+  pod 'Hero'
 end

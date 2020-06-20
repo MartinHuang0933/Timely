@@ -1,5 +1,6 @@
 PODS:
   - DNSPageView (1.5.0)
+  - Hero (1.5.0)
   - JXPagingView/Paging (2.0.6)
   - Kingfisher (5.13.2):
     - Kingfisher/Core (= 5.13.2)
@@ -15,6 +16,7 @@ PODS:
 
 DEPENDENCIES:
   - DNSPageView
+  - Hero
   - JXPagingView/Paging
   - LLCycleScrollView
   - MJRefresh (= 3.4.0)
@@ -25,6 +27,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - DNSPageView
+    - Hero
     - JXPagingView
     - Kingfisher
     - LLCycleScrollView
@@ -35,6 +38,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   DNSPageView: e3dc48f07c40f061d285150ab0cdc466f913230d
+  Hero: b7385b75e7259da62f4f85462f59a5082d66b058
   JXPagingView: 5851fb8cc964d0cbd93e9611077f7bc1fca05fee
   Kingfisher: d342c8354c10c3d85a27d6d4c42c41285924b898
   LLCycleScrollView: a08f666671f9fd1a205df9defebc3c217d59abc8
@@ -43,6 +47,6 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   ViewAnimator: 5af1c6f3b310f012bf081259c43717aa54fbae73
 
-PODFILE CHECKSUM: 4f61b7df28f002f452ff9c2a40b631060c35a653
+PODFILE CHECKSUM: 1e289e8faeea767e22b74bf560457abf41392f44
 
 COCOAPODS: 1.8.4
